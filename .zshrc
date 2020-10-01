@@ -16,7 +16,9 @@ alias gpl='git pull'
 alias gp='git push'
 alias gco='git checkout'
 alias gc='git commit'
+alias gcm='git commit -m'
 alias gbr='git branch'
+alias glg='git log'
 
 # SDKMAN!
 export SDKMAN_DIR="$HOME/.sdkman"
