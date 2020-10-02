@@ -2,8 +2,8 @@ autoload -Uz compinit && compinit
 zstyle ':completion:*' menu select
 
 source "$ZDOTDIR/.zsh_plugins.sh"
+source "$ZDOTDIR/.zsh_platform.sh"
 
-alias ls='ls -G'
 alias la='ls -a'
 alias ll='ls -l'
 alias lal='ls -al'
