@@ -1,4 +1,16 @@
-autoload -Uz compinit && compinit
+autoload -Uz compinit
+
+# Generate completions once a day
+setopt EXTENDEDGLOB
+for dump in $ZDOTDIR/.zcompdump(#qN.m1); do
+  compinit
+  if [[ -s "$dump" && (! -s "$dump.zwc" || "$dump" -nt "$dump.zwc") ]]; then
+    zcompile "$dump"
+  fi
+done
+unsetopt EXTENDEDGLOB
+compinit -C
+
 zstyle ':completion:*' menu select
 
 source "$ZDOTDIR/.zsh_plugins.sh"

@@ -1,5 +1,6 @@
 .zcompdump
 .zcompcache/
+.zsh_sessions/
 .zsh_platform.sh
 .zsh_history
 .zsh_plugins.sh
