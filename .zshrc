@@ -31,6 +31,9 @@ alias gc='git commit'
 alias gcm='git commit -m'
 alias gbr='git branch'
 alias glg='git log'
+alias gmr='git merge'
+alias grb='git rebase'
+alias gsw='git switch'
 
 # SDKMAN!
 export SDKMAN_DIR="$HOME/.sdkman"
