@@ -13,8 +13,9 @@ compinit -C
 
 zstyle ':completion:*' menu select
 
-source "$ZDOTDIR/.zsh_plugins.sh"
-source "$ZDOTDIR/.zsh_platform.sh"
+export NVM_LAZY_LOAD=true
+source "$ZDOTDIR/zsh_plugins.sh"
+source "$ZDOTDIR/zsh_platform.sh"
 
 alias la='ls -a'
 alias ll='ls -l'
@@ -38,3 +39,5 @@ alias gsw='git switch'
 # SDKMAN!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
+
+eval "$(starship init zsh)"

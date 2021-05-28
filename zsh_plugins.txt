@@ -1,10 +1,6 @@
-mafredri/zsh-async
-
 zsh-users/zsh-completions
 zsh-users/zsh-syntax-highlighting
 zsh-users/zsh-history-substring-search
 zsh-users/zsh-autosuggestions
 agkozak/zsh-z
 lukechilds/zsh-nvm
-
-sindresorhus/pure
