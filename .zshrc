@@ -17,6 +17,11 @@ export NVM_LAZY_LOAD=true
 source "$ZDOTDIR/zsh_plugins.sh"
 source "$ZDOTDIR/zsh_platform.sh"
 
+if [[ "$(uname -s)" == "Darwin" ]]; then
+    alias ls='ls -G'
+else
+    alias ls='ls --color=auto'
+fi
 alias la='ls -a'
 alias ll='ls -l'
 alias lal='ls -al'
